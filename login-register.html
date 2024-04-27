@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" x-bind:class="{ 'dark' : nightMode }" x-data="{ nightMode: false }">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font:Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Direct</title>
+
+    <style>
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen w-full flex items-center justify-center p-5">
+        <div class="w-full max-w-sm mx-auto">
+            <div class="border-b pb-5 mb-5">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                            d="M1.94607 9.31543C1.42353 9.14125 1.4194 8.86022 1.95682 8.68108L21.043 2.31901C21.5715 2.14285 21.8746 2.43866 21.7265 2.95694L16.2733 22.0432C16.1223 22.5716 15.8177 22.59 15.5944 22.0876L11.9999 14L17.9999 6.00005L9.99992 12L1.94607 9.31543Z">
+                        </path>
+                    </svg>
+                    <h2 class="text-3xl tracking-tight font-semibold">
+                        Direct.
+                    </h2>
+                </div>
+                <p class="mt-2 text-sm text-muted-foreground">Create an Account or Log In</p>
+            </div>
+            <form action="#" class="space-y-3">
+                <label for="username"
+                    class="block overflow-hidden rounded-lg border-2 px-3 py-2 transition-colors hover:border-primary focus-within:border-primary">
+                    <span class="text-xs font-medium text-muted-foreground"> Phone number, username or email: </span>
+
+                    <input type="text" id="username" placeholder=""
+                        class="mt-1 w-full bg-transparent border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                        autofocus />
+                </label>
+
+                <label for="password"
+                    class="block overflow-hidden rounded-lg border-2 px-3 py-2 transition-colors hover:border-primary focus-within:border-primary">
+                    <span class="text-xs font-medium text-muted-foreground"> Password: </span>
+
+                    <input type="password" id="password" placeholder=""
+                        class="mt-1 w-full bg-transparent border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm" />
+                </label>
+
+                <div class="flex items-start">
+                    <input id="terms" name="terms" type="checkbox"
+                        class="form-checkbox !ring-0 !ring-offset-0 w-5 h-5 border-border bg-border rounded-md cursor-pointer"
+                        required />
+                    <label for="terms" class="font-medium text-xs block leading-tight cursor-pointer ms-2">
+                        Creating an account means you’re okay with our
+                        <a href="#" class="inline-flex underline hover:text-primary">
+                            Terms of Service
+                        </a>
+                        and
+                        <a href="#" class="inline-flex underline hover:text-primary">
+                            Privacy Policy
+                        </a>
+                        .
+                    </label>
+                </div>
+
+                <button type="submit"
+                    class="flex items-center justify-center w-full h-10 bg-primary text-primary-foreground rounded-lg group px-3">
+                    <span class="font-medium text-sm group-hover:underline">Continue</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 rtl:rotate-180">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
