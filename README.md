@@ -1,5 +1,7 @@
 # Direct
 
+![Chat UI](https://spacedev.ir/images/screens/direct.png)
+
 ### Chat and Messaging User Interface with TailwindCSS and Alpine.js
 
 This template provides a simple and beautiful user interface for chat and messaging using TailwindCSS and Alpine.js.
